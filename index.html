@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var i,a,j;
+  function check(A, size,x) {
+    for (i = 0; i < (size-1); i ++) {
+      for(j=(i+1);j<size;j++){
+      if(A[i]+a[j]==x){
+        console.log("Pair with a given sum");
+        return true;
+      }
+    }
+  }
+return false;
+  }
+
+  var A = [0,-1,2,-3,1];
+  var x = -2;
+  var size = A.length;
+  if (check(A,size,x)){
+    console.log("Valid pair");
+  }else{
+    console.log("Invalid pair")
+  }
+    </script>
+</body>
+</html>
